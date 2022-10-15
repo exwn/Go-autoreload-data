@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+</body>
+
+<body class="flex h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div class="m-auto">
+        <div class="backdrop-blur-sm bg-white/10 rounded-3xl p-10 mb-4 text-center">
+            <h1 class="text-3xl font-bold">
+                {{ .waterValue}}m
+            </h1>
+            <h1 class="text-3xl font-bold">
+                {{ .water }}
+            </h1>
+        </div>
+        <div class="backdrop-blur-sm bg-white/10 rounded-3xl p-10 text-center">
+            <h1 class="text-3xl font-bold" id="value">
+                {{ .windValue}}m/s
+            </h1>
+            <h1 class="text-3xl font-bold">
+                {{ .wind }}
+            </h1>
+        </div>
+    </div>
+</body>
+<script>
+    setTimeout(function () {
+        location.reload();
+    }, 15000);
+</script>
+
+
+</html>
